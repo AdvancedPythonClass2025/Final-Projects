@@ -62,6 +62,24 @@ Your project folder must include:
    - Team member contributions
    - Demo instructions
 
+## Project Folder Structure
+
+### Setting Up Your Project Folder
+1. Copy the `project-readme-template.md` to your group's project folder
+2. Rename it to `README.md`
+3. Fill in your project's information
+4. Keep it updated as your project progresses
+
+### Folder Organization
+```
+group-[number]/
+├── README.md           # Project documentation (based on template)
+├── src/               # Source code directory
+├── tests/             # Test files directory
+├── docs/              # Additional documentation
+└── requirements.txt   # Project dependencies
+```
+
 ## Project Requirements
 
 1. Technical Requirements:
@@ -172,38 +190,20 @@ git checkout -b project/group-<number>/development
    - مشارکت‌های اعضای تیم
    - دستورالعمل‌های نمایش
 
-## الزامات پروژه
+## ساختار پوشه پروژه
 
-۱. الزامات فنی:
-   - پایتون ۳.۸+
-   - ساختار صحیح پکیج
-   - مدیریت خطا
-   - اعتبارسنجی ورودی
-   - پیاده‌سازی لاگینگ
+### راه‌اندازی پوشه پروژه
+۱. `project-readme-template.md` را به پوشه پروژه گروه خود کپی کنید
+۲. آن را به `README.md` تغییر نام دهید
+۳. اطلاعات پروژه خود را پر کنید
+۴. آن را به‌روز نگه دارید
 
-۲. الزامات مستندسازی:
-   - توضیحات کد
-   - مستندات API
-   - راهنمای راه‌اندازی
-   - راهنمای کاربر
-
-۳. الزامات تست:
-   - تست‌های واحد
-   - تست‌های یکپارچگی
-   - گزارش پوشش تست
-
-## معیارهای ارزیابی
-
-- کیفیت کد (۳۰٪)
-- کامل بودن ویژگی‌ها (۲۵٪)
-- مستندات (۲۰٪)
-- همکاری تیمی (۱۵٪)
-- تست (۱۰٪)
-
-## مهلت‌های مهم
-
-- پیشنهاد پروژه: ۳۰/۱۲/۱۴۰۳
-- بررسی میان‌پروژه: ۱۵/۰۲/۱۴۰۴
+### سازماندهی پوشه
+```
+group-[number]/
+├── README.md           # مستندات پروژه (بر اساس قالب)
+├── src/               # پوشه کد منبع
+├── tests/             # پوشه فایل‌های تست
 - ارسال نهایی: ۱۵/۰۳/۱۴۰۴
 - ارائه‌ها: ۱۸/۰۳/۱۴۰۴
 
