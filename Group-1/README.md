@@ -39,7 +39,7 @@
   ```
   
   ## Development Progress
-  - [ ] Design initial UI layout
+  - [x] Design initial UI layout
   - [ ] Build frontend development
   - [ ] Implement backend logic
   - [ ] Connect frontend to backend
