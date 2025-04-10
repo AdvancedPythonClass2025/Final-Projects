@@ -69,6 +69,8 @@ body {
 .replay , .dislike , .previous , .play , .next , .like , .shuffle {
     background: transparent;
     border: none;
+    width: 7%;
+    
 }
 
 .replay_img , .dislike_img , .previous_img , .play_img , .next_img , .like_img , .shuffle_img {
