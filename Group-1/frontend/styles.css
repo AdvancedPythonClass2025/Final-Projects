@@ -11,7 +11,7 @@ body {
     background-blend-mode: normal; 
 }
 .play_c{
-    min-width: 400px;
+    min-width: 500px;
     min-height: 40px;
     width: 35%;
     height: 6%;
@@ -30,7 +30,7 @@ body {
 .p_bar{
     
     height: 27%;
-    width: 77%;
+    width: 72%;
     position: absolute; 
     left: 50%; 
     top: 0%; 
@@ -69,11 +69,47 @@ body {
 .replay , .dislike , .previous , .play , .next , .like , .shuffle {
     background: transparent;
     border: none;
-    width: 7%;
+    height: 46%;
+    position: absolute;
+    bottom: 9%;
     
 }
 
 .replay_img , .dislike_img , .previous_img , .play_img , .next_img , .like_img , .shuffle_img {
     width: 100%;
     height: 100%;
+}
+
+.replay{
+    left: 6%;
+}
+
+.shuffle{
+    left: 85%;
+}
+
+.play{
+    left: 45%;
+}
+
+.previous{
+    left: 36%;
+    bottom: 13%;
+    height: 37%;
+}
+
+.next{
+    left: 54.5%;
+    bottom: 13%;
+    height: 38%;
+}
+
+.dislike{
+    left: 22%;
+    height: 44%;
+}
+
+.like{
+    left: 68%;
+    height: 44%;
 }
