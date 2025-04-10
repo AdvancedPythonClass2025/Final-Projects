@@ -11,6 +11,8 @@ body {
     background-blend-mode: normal; 
 }
 .play_c{
+    min-width: 400px;
+    min-height: 40px;
     width: 35%;
     height: 6%;
     position: absolute; 
@@ -21,8 +23,8 @@ body {
     background-image: 
 
     radial-gradient(circle at 50% 20%, rgba(255, 0, 0, 0.055), transparent 50%);
-    border-top-right-radius: 100px; 
-    border-top-left-radius: 100px;
+    border-top-right-radius: 50px; 
+    border-top-left-radius: 50px;
 }
 
 .p_bar{
