@@ -84,6 +84,11 @@ body {
     left: 6%;
 }
 
+.replay:hover{
+    filter: drop-shadow(0 0px 3px rgb(255, 0, 0));
+    transition: filter 0.3s;
+}
+
 .shuffle{
     left: 85%;
 }
