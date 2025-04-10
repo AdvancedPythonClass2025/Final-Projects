@@ -70,3 +70,8 @@ body {
     background: transparent;
     border: none;
 }
+
+.replay_img , .dislike_img , .previous_img , .play_img , .next_img , .like_img , .shuffle_img {
+    width: 100%;
+    height: 100%;
+}
