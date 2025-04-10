@@ -85,16 +85,26 @@ body {
 }
 
 .replay:hover{
-    filter: drop-shadow(0 0px 3px rgb(255, 0, 0));
-    transition: filter 0.3s;
+    filter: drop-shadow(0 0px 2px rgb(255, 0, 0));
+    transition: filter 0.4s;
 }
 
 .shuffle{
     left: 85%;
 }
 
+.shuffle:hover{
+    filter: drop-shadow(0 0px 2px rgb(255, 0, 0));
+    transition: filter 0.4s;
+}
+
 .play{
     left: 45%;
+}
+
+.play:hover{
+    filter: drop-shadow(0 0px 2px rgb(255, 0, 0));
+    transition: filter 0.4s;
 }
 
 .previous{
@@ -103,10 +113,20 @@ body {
     height: 37%;
 }
 
+.previous:hover{
+    filter: drop-shadow(0 0px 2px rgb(255, 0, 0));
+    transition: filter 0.4s;
+}
+
 .next{
     left: 54.5%;
     bottom: 13%;
     height: 38%;
+}
+
+.next:hover{
+    filter: drop-shadow(0 0px 2px rgb(255, 0, 0));
+    transition: filter 0.4s;
 }
 
 .dislike{
@@ -114,7 +134,17 @@ body {
     height: 44%;
 }
 
+.dislike:hover{
+    filter: drop-shadow(0 0px 2px rgb(255, 0, 0));
+    transition: filter 0.4s;
+}
+
 .like{
     left: 68%;
     height: 44%;
+}
+
+.like:hover{
+    filter: drop-shadow(0 0px 2px rgb(255, 0, 0));
+    transition: filter 0.4s;
 }
