@@ -38,7 +38,8 @@ body {
     top: 0%; 
     transform: translateX(-50%);
     appearance: none; 
-    background-color: #5c505083;
+    background-color: #5c50503f;
+    border-radius: 15%;
 }
 
 .p_bar::-webkit-progress-value {
