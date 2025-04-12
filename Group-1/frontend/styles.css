@@ -9,7 +9,7 @@ body {
         radial-gradient(circle at 40% 84%, rgba(255, 0, 0, 0.27), transparent 50%),
         radial-gradient(circle at 130% 50%, rgba(255, 0, 0, 0.582), transparent 40%),
         radial-gradient(circle at -6% -6%, rgba(255, 0, 0, 0.28), transparent 20%),
-        radial-gradient(circle at 94% 115%, rgba(255, 0, 0, 0.28), transparent 17%);
+        radial-gradient(circle at 94% 115%, rgba(255, 0, 0, 0.199), transparent 17%);
     background-blend-mode: normal; 
 }
 .play_c{
