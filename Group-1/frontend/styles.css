@@ -173,3 +173,8 @@ body {
     height: auto; 
     
 }
+
+.grid-item{
+    background-color: rgba(219, 205, 205, 0.199);
+    
+}
