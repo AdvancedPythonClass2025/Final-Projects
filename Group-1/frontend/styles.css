@@ -11,6 +11,7 @@ body {
         radial-gradient(circle at -6% -6%, rgba(255, 0, 0, 0.28), transparent 20%),
         radial-gradient(circle at 94% 115%, rgba(255, 0, 0, 0.171), transparent 17%);
     background-blend-mode: normal; 
+    background-attachment: fixed;
 }
 .play_c{
     min-width: 400px;
