@@ -185,7 +185,9 @@ body {
     background-color: rgba(219, 205, 205, 0.11);
     height: 140%;
     border-radius: 20px;
-    
+    text-align: center;
+    line-height: 0;
+       
 }
 
 @font-face {
@@ -193,8 +195,6 @@ body {
     src: url("fonts/AlumniSansPinstripe-Regular.ttf") format("truetype");
 }
 
-.title , .min , .sec , .singer {
-    
- position: absolute;   
- 
+.min , .sec {
+    position: absolute;
 }
