@@ -160,8 +160,9 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: 2.5%;
+    row-gap: 40%;
     padding-top: 4%;
     padding-left: 9%;
     padding-right: 9%;
@@ -176,5 +177,6 @@ body {
 
 .grid-item{
     background-color: rgba(219, 205, 205, 0.199);
+    height: 150%;
     
 }
