@@ -15,7 +15,7 @@ body {
 }
 .play_c{
     min-width: 400px;
-    min-height: 40px;
+    min-height: 34px;
     width: 35%;
     height: 4.7%;
     position: fixed; 
@@ -113,7 +113,7 @@ body {
 
 .previous{
     left: 36%;
-    bottom: 13%;
+    bottom: 14%;
     height: 36%;
     transition: filter 0.4s;
 }
@@ -161,7 +161,7 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
     gap: 2.5%;
     row-gap: 40%;
     padding-top: 4%;
