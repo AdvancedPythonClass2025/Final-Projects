@@ -17,7 +17,7 @@ body {
     min-height: 40px;
     width: 35%;
     height: 4.7%;
-    position: absolute; 
+    position: fixed; 
     left: 50%; 
     bottom: 0px; 
     transform: translateX(-50%);
