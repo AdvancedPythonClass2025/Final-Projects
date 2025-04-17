@@ -165,7 +165,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
     gap: 2.5%;
-    row-gap: 40%;
+    row-gap: 10%;
     padding-top: 4%;
     padding-left: 9%;
     padding-right: 9%;
@@ -183,7 +183,6 @@ body {
 
 .grid-item{
     background-color: rgba(219, 205, 205, 0.11);
-    height: 140%;
     border-radius: 20px;
     text-align: center;
     line-height: 0;
