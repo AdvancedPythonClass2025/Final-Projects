@@ -192,3 +192,9 @@ body {
     font-family: "Alumin";
     src: url("fonts/AlumniSansPinstripe-Regular.ttf") format("truetype");
 }
+
+.title , .min , .sec , .singer {
+    
+ position: absolute;   
+ 
+}
