@@ -211,6 +211,12 @@ body {
 
 .sec{
 
-transform: translate(40%);
+    transform: translate(40%);
+
+}
+
+.title{
+
+    transform: translateY(-4px);
 
 }
