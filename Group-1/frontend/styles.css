@@ -205,18 +205,24 @@ body {
 
 .min{
     
-    transform: translate(-40%);
+    transform: translate(-40% , -3px);
 
 }
 
 .sec{
 
-    transform: translate(40%);
+    transform: translate(40% , -3px);
 
 }
 
 .title{
-
+    font-size: 28px;
     transform: translateY(-4px);
+
+}
+
+.singer{
+    font-size: 21px;
+    transform: translateY(7px);
 
 }
