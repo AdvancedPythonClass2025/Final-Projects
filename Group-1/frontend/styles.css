@@ -170,6 +170,7 @@ body {
     padding-left: 9%;
     padding-right: 9%;
     padding-bottom: 24%;
+    font-size: 14px;
 }
 
 
@@ -198,17 +199,18 @@ body {
   
     transform: translateY(0px);  
     margin: 0;
+    font-size: 26px;
 
 }
 
 .min{
     
-    transform: translate(-35%);
+    transform: translate(-40%);
 
 }
 
 .sec{
 
-transform: translate(35%);
+transform: translate(40%);
 
 }
