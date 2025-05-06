@@ -203,6 +203,12 @@ body {
 
 .min{
     
-    transform: translate(-35% , 0px);
+    transform: translate(-35%);
+
+}
+
+.sec{
+
+transform: translate(35%);
 
 }
