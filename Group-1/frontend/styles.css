@@ -194,7 +194,9 @@ body {
     src: url("fonts/AlumniSansPinstripe-Regular.ttf") format("truetype");
 }
 
-.min , .sec {
-    
-    position: absolute;
+.min, .sec {
+  
+    transform: translateY(0px);  
+    margin: 0;
+
 }
