@@ -190,10 +190,6 @@ body {
        
 }
 
-@font-face {
-    font-family: "Alumin";
-    src: url("fonts/AlumniSansPinstripe-Regular.ttf") format("truetype");
-}
 
 .min, .sec {
   
