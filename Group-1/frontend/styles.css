@@ -227,3 +227,17 @@ body {
     color: rgb(173, 176, 179);
     padding-bottom: 5%;
 }
+
+.menu{
+    
+    border: none;
+    background-color:#f0dada00;
+
+}
+
+.menu_img{
+
+    width: 100%;
+    height: auto;
+
+}
