@@ -196,7 +196,8 @@ body {
     font-family: system-ui;
     transform: translateY(0px);  
     margin: 0;
-    font-size: 26px;
+    font-size: 21px;
+    font-weight: 200;
 
 }
 
@@ -215,7 +216,7 @@ body {
 .title{
     font-family: system-ui;
     padding-top: 5%;
-    font-size: 15px;
+    font-size: 17px;
     transform: translateY(-4px);
     font-weight: 300;
 
