@@ -190,13 +190,11 @@ body {
 
 }
 
-
-
 .min, .sec {
     font-family: system-ui;
     transform: translateY(0px);  
     margin: 0;
-    font-size: 21px;
+    font-size: 16px;
     font-weight: 200;
 
 }
@@ -216,7 +214,7 @@ body {
 .title{
     font-family: system-ui;
     padding-top: 5%;
-    font-size: 17px;
+    font-size: 14px;
     transform: translateY(-4px);
     font-weight: 300;
 
@@ -224,7 +222,8 @@ body {
 
 .singer{
     font-family: system-ui;
-    font-size: 21px;
+    font-size: 11px;
     transform: translateY(1px);
-
+    color: rgb(173, 176, 179);
+    padding-bottom: 5%;
 }
