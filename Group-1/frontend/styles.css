@@ -229,9 +229,12 @@ body {
 }
 
 .menu{
-    
+
     border: none;
     background-color:#f0dada00;
+    width: 3.5%;
+    height: auto;
+
 
 }
 
