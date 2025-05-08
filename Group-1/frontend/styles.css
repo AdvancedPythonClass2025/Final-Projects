@@ -234,7 +234,9 @@ body {
     background-color:#f0dada00;
     width: 3.5%;
     height: auto;
-
+    position: fixed;
+    left: 0%;
+    bottom: 0%;
 
 }
 
