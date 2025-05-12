@@ -297,6 +297,7 @@ body {
     padding-right: 28%;
     background: linear-gradient(0deg,rgba(71, 7, 7, 1) 0%, rgba(117, 18, 18, 1) 100%);
     border: none;
+    border-radius: 5px;
 }
 
 .folder_d{
@@ -306,4 +307,5 @@ body {
     padding-right: 28%;
     background: linear-gradient(0deg,rgba(71, 7, 7, 1) 0%, rgba(117, 18, 18, 1) 100%);
     border: none;
+    border-radius: 5px;
 }
