@@ -262,4 +262,5 @@ body {
     backdrop-filter: blur(6px);
     border-top-right-radius: 13px;
     border-bottom-right-radius: 13px;
+    display: none;
 }

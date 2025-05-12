@@ -37,3 +37,15 @@ function dislike(){
         image.src = originalSrc; 
     }
 }
+
+function menu() {
+
+      var menuDiv = document.getElementById('menu_div');
+      var menuButton = document.getElementById('menu');
+      
+    
+      menuDiv.style.display = "unset";
+      
+    
+      menuButton.style.display = "none";
+    }
