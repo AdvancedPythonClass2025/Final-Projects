@@ -251,7 +251,7 @@ body {
 
 .menu_div{
 
-    background-color: rgba(88, 87, 87, 0.274);
+    background-color: rgba(73, 69, 69, 0.274);
     width: 12%;
     height: 100%;
     position:fixed;
@@ -260,4 +260,6 @@ body {
     min-width: 150px;
     max-width: 250px;
     backdrop-filter: blur(6px);
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
 }
