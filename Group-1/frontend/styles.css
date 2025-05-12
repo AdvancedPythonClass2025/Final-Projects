@@ -30,6 +30,7 @@ body {
     radial-gradient(circle at 50% 20%, rgba(255, 0, 0, 0.055), transparent 50%);
     border-top-right-radius: 50px; 
     border-top-left-radius: 50px;
+    backdrop-filter: blur(2px);
 }
 
 .p_bar{
@@ -250,7 +251,7 @@ body {
 
 .menu_div{
 
-    background-color: rgba(114, 114, 114, 0.274);
+    background-color: rgba(88, 87, 87, 0.274);
     width: 12%;
     height: 100%;
     position:fixed;
@@ -258,4 +259,5 @@ body {
     top: 0%;
     min-width: 150px;
     max-width: 250px;
+    backdrop-filter: blur(6px);
 }
