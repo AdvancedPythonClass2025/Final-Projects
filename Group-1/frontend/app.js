@@ -40,12 +40,18 @@ function dislike(){
 
 function menu() {
 
-      var menuDiv = document.getElementById('menu_div');
-      var menuButton = document.getElementById('menu');
-      
+    var menuDiv = document.getElementById('menu_div');
+    var menuButton = document.getElementById('menu');
+
+    menuDiv.style.display = "unset";
+    menuButton.style.display = "none";
     
-      menuDiv.style.display = "unset";
-      
-    
-      menuButton.style.display = "none";
-    }
+}
+
+function menu_c() {
+    var menuDiv = document.getElementById('menu_div');
+    var menuButton = document.getElementById('menu');
+
+    menuDiv.style.display = "none";
+    menuButton.style.display = "unset";
+}
