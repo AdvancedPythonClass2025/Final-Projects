@@ -264,3 +264,13 @@ body {
     border-bottom-right-radius: 13px;
     display: none;
 }
+
+.close_img , .setting_img , .theme_img {
+    width: 100%;
+    height: auto;
+}
+
+.close , .setting , .theme {
+    width: 20%;
+    height: auto;
+}
