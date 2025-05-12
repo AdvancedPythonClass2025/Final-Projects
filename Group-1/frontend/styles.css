@@ -289,3 +289,21 @@ body {
 .setting {
     margin-left: 15%;
 }
+
+.file_d{
+    padding-top: 23%;
+    padding-bottom: 23%;
+    padding-left: 28%;
+    padding-right: 28%;
+    background: linear-gradient(0deg,rgba(71, 7, 7, 1) 0%, rgba(117, 18, 18, 1) 100%);
+    border: none;
+}
+
+.folder_d{
+    padding-top: 23%;
+    padding-bottom: 23%;
+    padding-left: 28%;
+    padding-right: 28%;
+    background: linear-gradient(0deg,rgba(71, 7, 7, 1) 0%, rgba(117, 18, 18, 1) 100%);
+    border: none;
+}
