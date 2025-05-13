@@ -299,7 +299,7 @@ body {
     background: linear-gradient(0deg,rgba(71, 7, 7, 1) 0%, rgba(117, 18, 18, 1) 100%);
     border: none;
     border-radius: 5px;
-
+    position: absolute;
 }
 
 .folder_d{
@@ -310,6 +310,7 @@ body {
     background: linear-gradient(0deg,rgba(71, 7, 7, 1) 0%, rgba(117, 18, 18, 1) 100%);
     border: none;
     border-radius: 5px;
+    position: absolute;
 
 }
 
