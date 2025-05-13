@@ -264,6 +264,7 @@ body {
     border-top-right-radius: 13px;
     border-bottom-right-radius: 13px;
     display: none;
+    min-height: 400px;
 }
 
 .close_img , .setting_img , .theme_img {
