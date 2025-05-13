@@ -239,6 +239,7 @@ body {
     left: 0%;
     bottom: 0%;
     max-width: 40px;
+    min-width: 30px;
 
 }
 
@@ -263,6 +264,7 @@ body {
     border-top-right-radius: 13px;
     border-bottom-right-radius: 13px;
     display: none;
+    min-height: 400px;
 }
 
 .close_img , .setting_img , .theme_img {
@@ -291,25 +293,96 @@ body {
 }
 
 .file_d{
-    padding-top: 23%;
-    padding-bottom: 23%;
-    padding-left: 28%;
-    padding-right: 28%;
+    padding-top: 26%;
+    padding-bottom: 26%;
+    padding-left: 35%;
+    padding-right: 35%;
     background: linear-gradient(0deg,rgba(71, 7, 7, 1) 0%, rgba(117, 18, 18, 1) 100%);
     border: none;
     border-radius: 5px;
-    margin-top: 22vh;
-    margin-left: 24%;
+    position: absolute;
+    left: 16%;
+    top: 30%;
 }
 
 .folder_d{
-    padding-top: 23%;
-    padding-bottom: 23%;
-    padding-left: 28%;
-    padding-right: 28%;
+    padding-top: 26%;
+    padding-bottom: 26%;
+    padding-left: 35%;
+    padding-right: 35%;
     background: linear-gradient(0deg,rgba(71, 7, 7, 1) 0%, rgba(117, 18, 18, 1) 100%);
     border: none;
     border-radius: 5px;
-    margin-top: 6vh;
-    margin-left: 24%;
+    position: absolute;
+    left: 16%;
+    top: 50%;
+
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none; 
+  width: 70%;
+  cursor:cell;
+  outline: none;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 3px;
+  background: #9e9c9c;
+  border-radius: 16px;
+}
+
+input[type="range"]::-moz-range-track {
+  height: 3px;
+  background: #9e9c9c79;
+  border-radius: 16px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none; 
+  height: 3px;
+  width: 15px;
+  background-color: #8a878788;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 0, 0);
+  box-shadow: -407px 0 0 400px rgb(255, 8, 0);
+}
+
+input[type="range"]::-moz-range-thumb {
+  height: 3px;
+  width: 15px;
+  background-color: #9492926e;
+  border-radius: 50%;
+  border: 1px solid rgb(255, 0, 0);
+  box-shadow: -407px 0 0 400px rgb(255, 0, 0);
+}
+
+.sound_b_img{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.sound_b{
+
+    background:none;
+    border: none;
+    width: 20%;
+    position: absolute;
+    bottom: 2%;
+    left: 0%;
+
+}
+
+.sound{
+
+    position: absolute;
+    bottom: 3%;
+    left: 20%;
+
 }
