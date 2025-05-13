@@ -292,10 +292,10 @@ body {
 }
 
 .file_d{
-    padding-top: 23%;
-    padding-bottom: 23%;
-    padding-left: 28%;
-    padding-right: 28%;
+    padding-top: 26%;
+    padding-bottom: 26%;
+    padding-left: 35%;
+    padding-right: 35%;
     background: linear-gradient(0deg,rgba(71, 7, 7, 1) 0%, rgba(117, 18, 18, 1) 100%);
     border: none;
     border-radius: 5px;
@@ -304,10 +304,10 @@ body {
 }
 
 .folder_d{
-    padding-top: 23%;
-    padding-bottom: 23%;
-    padding-left: 28%;
-    padding-right: 28%;
+    padding-top: 26%;
+    padding-bottom: 26%;
+    padding-left: 35%;
+    padding-right: 35%;
     background: linear-gradient(0deg,rgba(71, 7, 7, 1) 0%, rgba(117, 18, 18, 1) 100%);
     border: none;
     border-radius: 5px;
