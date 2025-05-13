@@ -367,5 +367,9 @@ input[type="range"]::-moz-range-thumb {
 
     background:none;
     border: none;
+    width: 20%;
+    position: absolute;
+    bottom: 2%;
+    left: 0%;
 
 }
