@@ -1,1 +1,5 @@
-📝
+class Task:
+    def __init__(self, description, category="عمومی", due_date=None):
+        ...
+    def __str__(self):
+        ...
