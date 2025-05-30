@@ -18,4 +18,9 @@ class TaskManager:
 def save_to_file(self):
     ...
 def load_from_file(self):
+
+def menue(manager):
+   while true:
+     print("\n1. اضافه کردن وظیفه\n2. مشاهده وظیفه ها\n...")
+     choice = input("انتخاب کنید:")
     ...
