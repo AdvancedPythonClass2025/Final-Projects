@@ -19,3 +19,7 @@ def save_to_file(self):
     ...
 def load_from_file(self):
     ...
+if name == "__main__":
+    manager = TaskManager()
+    manager.load_from_file()
+    menu(manager)
