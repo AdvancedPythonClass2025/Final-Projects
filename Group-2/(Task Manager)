@@ -16,6 +16,10 @@ class TaskManager:
     def delete_task(self, ...):
         ...
 def save_to_file(self):
+   def menue(manager):
+      while True:
+        print("\n1. اضافه کردن وظیفه\n2.مشاهده وظایف\n...")
+        choice = input("انتخاب کنید: ")
     ...
 def load_from_file(self):
      def menue(manager):
