@@ -1,28 +1,25 @@
-# [task manager]
+# [Project Name]
 
 ## Team Information
 | Name | Role | Main Responsibilities |
 |------|------|---------------------|
-| [mobina gharehdaghi] | Group Leader | [e.g., Architecture Design, Team Coordination] |
-| [amin azimi] | Backend Developer | [e.g., Database Design, API Development] |
-| [korosh rastgar] | Frontend Developer | [e.g., UI Implementation, User Experience] |
-| [mahya heydari] 
-| [setayesh heydari] 
-| [hoda ahmadi] 
+| [kourosh Rastegar] | Group Leader | [e.g., Architecture Design, Team Coordination] |
+| [Mobina gharadaghi] | Backend Developer | [e.g., Database Design, API Development] |
+| [Amin azimi] | Frontend Developer | [e.g., UI Implementation, User Experience] |
+| [Hoda ahmadi] | Frontend Developer | [e.g., UI Implementation, User Experience] |
+| [Setayesh heidari] | Frontend Developer | [e.g., UI Implementation, User Experience] |
+| [Mahya heidari] | Frontend Developer | [e.g., UI Implementation, User Experience] |
+
 ## Project Overview
-- **Description:** Brief description of your project
+- **Description:** this project is a simple task manager program
+- written in python that allows users to enter, edit, delete,
+- and save their tasks.
 - **Main Features:**
-  
-1 Task Manager"
-A simple application that allows users to add, 
-2 edit, delete
-and view their task schedule. 
-3 It comes with features such as task
-4 categories,
-5 due dates or
-6 notifications
-     
-    
+  1. add a task with description, category, and date
+  2. view the list of all tasks
+  3. edit or delete a task based on its number
+  4. save and retrieve tasks in/from a text file
+  5. simple text-based user interface (CLI-command-line interface)
 - **Tech Stack:**
   - Python 3.8+
   - [List other technologies/frameworks]
@@ -141,57 +138,4 @@ src/
     └── design/
 ```
 
-## دستورالعمل‌های راه‌اندازی
-۱. راه‌اندازی محیط
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # Windows: venv\Scripts\activate
-   pip install -r requirements.txt
-   ```
-۲. پیکربندی
-   ```python
-   # تنظیم متغیرهای محیطی
-   ```
-۳. اجرای پروژه
-   ```bash
-   python src/main.py
-   ```
 
-## مستندات API
-### نقطه پایانی ۱
-- **آدرس:** `/api/v1/endpoint`
-- **متد:** `GET`
-- **پاسخ:** [توضیحات]
-
-### نقطه پایانی ۲
-// ... نقاط پایانی بیشتر اضافه کنید
-
-## پیشرفت توسعه
-- [x] راه‌اندازی پروژه
-- [x] طراحی پایگاه داده
-- [ ] پیاده‌سازی API
-- [ ] توسعه فرانت‌اند
-- [ ] تست
-- [ ] مستندسازی
-
-## تست‌ها
-```bash
-# اجرای تست‌های واحد
-python -m pytest tests/unit
-
-# اجرای تست‌های یکپارچگی
-python -m pytest tests/integration
-```
-
-## راهنمای مشارکت
-۱. نام‌گذاری شاخه: `feature/[نام-ویژگی]`
-۲. فرمت پیام commit: `[نوع]: [توضیحات]`
-۳. تعداد بررسی‌های مورد نیاز: ۲ عضو تیم
-۴. حداقل پوشش تست: ٪۸۰
-
-## بهبودهای آینده
-۱. [ویژگی آینده ۱]
-۲. [ویژگی آینده ۲]
-۳. [بهبودهای عملکردی]
-
-</div>
