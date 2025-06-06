@@ -3,17 +3,22 @@
 ## Team Information
 | Name | Role | Main Responsibilities |
 |------|------|---------------------|
-| [kourosh Rastegar] | Group Leader | [e.g., Architecture Design, Team Coordination] |
-| [Mobina gharadaghi] | Backend Developer | [e.g., Database Design, API Development] |
-| [Amin azimi] | Frontend Developer | [e.g., UI Implementation, User Experience] |
-| [Hoda ahmadi] | Frontend Developer | [e.g., UI Implementation, User Experience] |
-| [Setayesh heidari] | Frontend Developer | [e.g., UI Implementation, User Experience] |
-| [Mahya heidari] | Frontend Developer | [e.g., UI Implementation, User Experience] |
+| [kourosh Rastegar] | Backend Developer,task class design | [creat a class to manage task information including description, category, and date.] |
+| [Mobina gharadaghi] |  Group Leader core operations(CRUD) | [implement task creation, reading, updating, and delition functionality.] |
+| [Amin azimi] | Backend Developer,file storage system | [Enable saving tasks to a file and retrieving them on program startup] |
+| [Hoda ahmadi] | Frontend Developer,text-based UI design | [Develop a console menu system and user input handling.] |
+| [Setayesh heidari] | Backend Developer,Error handling & input validation | [implement input verification and crash prevention mechanisms.] |
+| [Mahya heidari] | Frontend Developer,final testing & refinements | [Conduct comprehensive testing, debug all components, and perform final checks.] |
 
 ## Project Overview
 - **Description:** this project is a simple task manager program
 - written in python that allows users to enter, edit, delete,
 - and save their tasks.
+- conclusion:
+- this project is asimple yet practical example of personal management
+- applications, designed using object-oriented programming (OOP) principles
+- and file storage. the clear division of responsibilities enabled the team to work in
+- on orderly and effective manner.
 - **Main Features:**
   1. add a task with description, category, and date
   2. view the list of all tasks
