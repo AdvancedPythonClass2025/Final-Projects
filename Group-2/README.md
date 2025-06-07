@@ -31,21 +31,37 @@
 
 ## Project Structure
 ```
-src/
+task-manager/
+│
 ├── backend/
-│   ├── api/
-│   ├── models/
-│   └── utils/
+│   ├── app/
+│   │   ├── controllers/       # منطق کنترلرها (TaskController, UserController, ...)
+│   │   ├── models/            # مدل‌های دیتابیس (Task.js, User.js)
+│   │   ├── routes/            # مسیرهای API (taskRoutes.js, userRoutes.js)
+│   │   ├── middleware/        # احراز هویت، خطاها و غیره
+│   │   ├── services/          # منطق تجاری جدای از کنترلر
+│   │   ├── config/            # تنظیمات (DB, JWT, CORS, ...)
+│   │   ├── utils/             # ابزارهای کمکی
+│   │   └── app.js             # نقطه ورود اصلی بک‌اند
+│   └── server.js              # اجرای سرور
+│
 ├── frontend/
-│   ├── components/
-│   └── views/
-├── tests/
-│   ├── unit/
-│   └── integration/
-└── docs/
-    ├── api/
-    ├── setup/
-    └── design/
+│   ├── public/                # فایل‌های عمومی (index.html, favicon)
+│   ├── src/
+│   │   ├── assets/            # عکس‌ها، آیکون‌ها
+│   │   ├── components/        # کامپوننت‌های قابل استفاده مجدد (TaskCard, Navbar)
+│   │   ├── pages/             # صفحات اصلی (Home, Login, Dashboard)
+│   │   ├── services/          # توابع ارتباط با API
+│   │   ├── hooks/             # هوک‌های سفارشی (مثل useTasks)
+│   │   ├── context/           # مدیریت state (Context API یا Redux)
+│   │   ├── App.jsx            # ساختار اصلی برنامه
+│   │   └── main.jsx           # نقطه شروع فرانت
+│   └── vite.config.js         # تنظیمات Vite یا Webpack
+│
+├── .env                       # متغیرهای محیطی (برای API keys, DB URL, ...)
+├── package.json               # پکیج‌های Node.js (root-level)
+├── README.md                  # توضیحات پروژه
+└── docs/                      # مستندات API یا طراحی‌ها
 ```
 
 ## Setup Instructions
@@ -104,43 +120,6 @@ python -m pytest tests/integration
 ---
 
 <div dir="rtl">
-
-# [نام پروژه]
-
-## اطلاعات تیم
-| نام | نقش | مسئولیت‌های اصلی |
-|------|------|---------------------|
-| [نام کامل] | سرگروه | [مثال: طراحی معماری، هماهنگی تیم] |
-| [نام کامل] | توسعه‌دهنده بک‌اند | [مثال: طراحی پایگاه داده، توسعه API] |
-| [نام کامل] | توسعه‌دهنده فرانت‌اند | [مثال: پیاده‌سازی رابط کاربری، تجربه کاربری] |
-
-## مرور کلی پروژه
-- **توضیحات:** توضیح مختصر پروژه شما
-- **ویژگی‌های اصلی:**
-  ۱. ویژگی ۱
-  ۲. ویژگی ۲
-  ۳. ویژگی ۳
-- **تکنولوژی‌های مورد استفاده:**
-  - پایتون ۳.۸+
-  - [لیست سایر تکنولوژی‌ها/فریم‌ورک‌ها]
-
-## ساختار پروژه
-```
-src/
-├── backend/
-│   ├── api/
-│   ├── models/
-│   └── utils/
-├── frontend/
-│   ├── components/
-│   └── views/
-├── tests/
-│   ├── unit/
-│   └── integration/
-└── docs/
-    ├── api/
-    ├── setup/
-    └── design/
 ```
 
 
