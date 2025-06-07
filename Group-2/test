@@ -1,0 +1,20 @@
+from task_manager import Task, TaskManager
+
+def test_add_task():
+    manager = TaskManager()
+    manager.add_task("تست", "کار")
+    assert len(manager.tasks) == 1
+    assert manager.tasks[0].description == "تست"
+    assert manager.tasks[0].category == "کار"
+
+def test_edit_task():
+    manager = TaskManager()
+    manager.add_task("تست", "شخصی")
+    manager.edit_task(0, description="تست جدید")
+    assert manager.tasks[0].description == "تست جدید"
+
+def test_delete_task():
+    manager = TaskManager()
+    manager.add_task("تست")
+    manager.delete_task(0)
+    assert len(manager.tasks) == 0
