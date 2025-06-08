@@ -1,16 +1,25 @@
 import os
 import tkinter as tk
-from tkinter import filedialog
+from tkinter import filedialog, Toplevel
+import pygame
 from mutagen.mp3 import MP3
 from mutagen.id3 import ID3
-from PIL import Image
+from PIL import Image, ImageTk
 import io
 
 class MusicPlayer:
     def __init__(self):
         self.folder_path = self.choose_folder()
         self.playlist = self.load_music_files()
-        self.display_playlist()
+        self.current_index = 0
+        pygame.mixer.init()
+        self.album_art_window = None
+
+        if self.playlist:
+            print("\n🎵 Music files found:\n")
+            self.display_playlist()
+        else:
+            print("No MP3 files found in the selected folder.")
 
     def choose_folder(self):
         root = tk.Tk()
@@ -35,12 +44,26 @@ class MusicPlayer:
             return Image.open(io.BytesIO(image_data))
         return None
 
-    def display_playlist(self):
-        for i, file in enumerate(self.playlist):
-            title, artist, duration, album_art = self.extract_metadata(file)
-            print(f"{i+1}. {title} - {artist} ({duration:.2f} sec)")
-            if album_art:
-                album_art.show()
+    def play(self, index):
+        if 0 <= index < len(self.playlist):
+            pygame.mixer.music.load(self.playlist[index])
+            pygame.mixer.music.play()
+            self.current_index = index
+            _, _, _, album_art = self.extract_metadata(self.playlist[index])
+            self.display_album_art(album_art)
+
+    def display_album_art(self, image):
+        if self.album_art_window:
+            self.album_art_window.destroy()
+
+        if image:
+            self.album_art_window = Toplevel()
+            self.album_art_window.title("Album Art")
+            img = ImageTk.PhotoImage(image)
+            label = tk.Label(self.album_art_window, image=img)
+            label.image = img
+            label.pack()
 
 if __name__ == "__main__":
     player = MusicPlayer()
+    player.play(0)  # Example to play first track
