@@ -3,6 +3,8 @@ import tkinter as tk
 from tkinter import filedialog
 from mutagen.mp3 import MP3
 from mutagen.id3 import ID3
+from PIL import Image
+import io
 
 class MusicPlayer:
     def __init__(self):
@@ -24,12 +26,21 @@ class MusicPlayer:
         title = audio.get("TIT2").text[0] if audio.get("TIT2") else "Unknown Title"
         artist = audio.get("TPE1").text[0] if audio.get("TPE1") else "Unknown Artist"
         duration = audio.info.length if audio.info else 0
-        return title, artist, duration
+        album_art = self.extract_album_art(audio)
+        return title, artist, duration, album_art
+
+    def extract_album_art(self, audio):
+        if "APIC:" in audio.tags:
+            image_data = audio.tags["APIC:"].data
+            return Image.open(io.BytesIO(image_data))
+        return None
 
     def display_playlist(self):
         for i, file in enumerate(self.playlist):
-            title, artist, duration = self.extract_metadata(file)
+            title, artist, duration, album_art = self.extract_metadata(file)
             print(f"{i+1}. {title} - {artist} ({duration:.2f} sec)")
+            if album_art:
+                album_art.show()
 
 if __name__ == "__main__":
     player = MusicPlayer()
