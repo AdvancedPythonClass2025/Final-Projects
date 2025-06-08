@@ -88,5 +88,11 @@ class MusicPlayer:
     def stop(self):
         pygame.mixer.music.stop()
 
+    def set_volume(self, volume):
+        if 0.0 <= volume <= 1.0:
+            pygame.mixer.music.set_volume(volume)
+        else:
+            print("Volume must be between 0.0 and 1.0")
+
 if __name__ == "__main__":
     player = MusicPlayer()
