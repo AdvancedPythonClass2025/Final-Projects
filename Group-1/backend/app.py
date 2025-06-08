@@ -79,5 +79,14 @@ class MusicPlayer:
             self.current_index = (self.current_index - 1) % len(self.playlist)
             self.play(self.current_index)
 
+    def pause(self):
+        pygame.mixer.music.pause()
+
+    def resume(self):
+        pygame.mixer.music.unpause()
+
+    def stop(self):
+        pygame.mixer.music.stop()
+
 if __name__ == "__main__":
     player = MusicPlayer()
