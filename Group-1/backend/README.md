@@ -10,3 +10,10 @@ To start the backend server, run:
 
 ```bash
 python app.py
+```
+
+## Dependencies
+
+```bash
+pip install pygame mutagen tk pillow
+```
