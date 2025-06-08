@@ -44,13 +44,10 @@ class MusicPlayer:
             return Image.open(io.BytesIO(image_data))
         return None
 
-    def play(self, index):
-        if 0 <= index < len(self.playlist):
-            pygame.mixer.music.load(self.playlist[index])
-            pygame.mixer.music.play()
-            self.current_index = index
-            _, _, _, album_art = self.extract_metadata(self.playlist[index])
-            self.display_album_art(album_art)
+    def display_playlist(self):
+        for i, file in enumerate(self.playlist):
+            title, artist, duration, _ = self.extract_metadata(file)
+            print(f"{i+1}. {title} - {artist} ({duration:.2f} sec)")
 
     def display_album_art(self, image):
         if self.album_art_window:
@@ -64,6 +61,23 @@ class MusicPlayer:
             label.image = img
             label.pack()
 
+    def play(self, index):
+        if 0 <= index < len(self.playlist):
+            pygame.mixer.music.load(self.playlist[index])
+            pygame.mixer.music.play()
+            self.current_index = index
+            _, _, _, album_art = self.extract_metadata(self.playlist[index])
+            self.display_album_art(album_art)
+
+    def next_track(self):
+        if self.playlist:
+            self.current_index = (self.current_index + 1) % len(self.playlist)
+            self.play(self.current_index)
+
+    def previous_track(self):
+        if self.playlist:
+            self.current_index = (self.current_index - 1) % len(self.playlist)
+            self.play(self.current_index)
+
 if __name__ == "__main__":
     player = MusicPlayer()
-    player.play(0)  # Example to play first track
