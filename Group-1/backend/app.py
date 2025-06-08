@@ -6,12 +6,14 @@ from mutagen.mp3 import MP3
 from mutagen.id3 import ID3
 from PIL import Image, ImageTk
 import io
+import random
 
 class MusicPlayer:
     def __init__(self):
         self.folder_path = self.choose_folder()
         self.playlist = self.load_music_files()
         self.current_index = 0
+        self.shuffle_mode = False  # Shuffle mode toggle
         pygame.mixer.init()
         self.album_art_window = None
 
@@ -71,7 +73,10 @@ class MusicPlayer:
 
     def next_track(self):
         if self.playlist:
-            self.current_index = (self.current_index + 1) % len(self.playlist)
+            if self.shuffle_mode:
+                self.current_index = random.randint(0, len(self.playlist) - 1)
+            else:
+                self.current_index = (self.current_index + 1) % len(self.playlist)
             self.play(self.current_index)
 
     def previous_track(self):
@@ -94,11 +99,15 @@ class MusicPlayer:
         else:
             print("Volume must be between 0.0 and 1.0")
 
+    def toggle_shuffle(self):
+        self.shuffle_mode = not self.shuffle_mode
+        print(f"Shuffle mode {'enabled' if self.shuffle_mode else 'disabled'}")
+
 if __name__ == "__main__":
     player = MusicPlayer()
 
     while True:
-        command = input("\nCommands: play <num>, pause, resume, stop, next, prev, vol <0-1>, exit\n>> ")
+        command = input("\nCommands: play <num>, pause, resume, stop, next, prev, vol <0-1>, shuffle, exit\n>> ")
         if command.startswith("play"):
             _, index = command.split()
             player.play(int(index) - 1)
@@ -115,5 +124,7 @@ if __name__ == "__main__":
         elif command.startswith("vol"):
             _, level = command.split()
             player.set_volume(float(level))
+        elif command == "shuffle":
+            player.toggle_shuffle()
         elif command == "exit":
             break
