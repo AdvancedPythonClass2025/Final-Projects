@@ -96,3 +96,24 @@ class MusicPlayer:
 
 if __name__ == "__main__":
     player = MusicPlayer()
+
+    while True:
+        command = input("\nCommands: play <num>, pause, resume, stop, next, prev, vol <0-1>, exit\n>> ")
+        if command.startswith("play"):
+            _, index = command.split()
+            player.play(int(index) - 1)
+        elif command == "pause":
+            player.pause()
+        elif command == "resume":
+            player.resume()
+        elif command == "stop":
+            player.stop()
+        elif command == "next":
+            player.next_track()
+        elif command == "prev":
+            player.previous_track()
+        elif command.startswith("vol"):
+            _, level = command.split()
+            player.set_volume(float(level))
+        elif command == "exit":
+            break
